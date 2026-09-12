@@ -111,9 +111,7 @@ registration required) and follow `MD_ED_exercise/vmd-tutorial.pdf`.
 ### Exercise data
 
 The trajectories and reference outputs for the exercise of Day 2 are too large for this
-repository:
-
-**[Download the Day 2 data from Google Drive](https://drive.google.com/drive/folders/1E-5biEIZL0NDnWPQt-0zna1TtQSTFfiQ?usp=drive_link)**
+repository, so you can download them from Google Drive at this [link](https://drive.google.com/drive/folders/1E-5biEIZL0NDnWPQt-0zna1TtQSTFfiQ?usp=drive_link).
 
 Download the folder and place it under `Day_2/`, keeping its name, so that the
 paths used in `MD_tutorial.md` resolve correctly.
