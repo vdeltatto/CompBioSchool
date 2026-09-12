@@ -18,7 +18,7 @@ Day_5/   (to come)
 ```
 
 Day 2 has extra requirements beyond the Python environment — see
-[Day 2: GROMACS, VMD and exercise data](#day-2-gromacs-vmd-and-exercise-data).
+[GROMACS, VMD and exercise data](#gromacs-vmd-and-exercise-data).
 
 ## Setting up the Python environment
 
