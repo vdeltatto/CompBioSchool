@@ -1,0 +1,53 @@
+title                   = OPLS GAG+ NVT production 
+; Run parameters
+integrator              = md        ; leap-frog integrator
+nsteps                  = 25000000  ; = 50 ns
+dt                      = 0.002     ; 2 fs
+
+; Output control
+nstxout                 = 0         ; suppress bulky .trr file by specifying 
+nstvout                 = 0         ; 0 for output frequency of nstxout,
+nstfout                 = 0         ; nstvout, and nstfout
+nstenergy               = 1000      ; save energies every 2.0 ps
+nstlog                  = 1000      ; update log file every 2.0 ps
+nstxout-compressed      = 1000      ; save compressed coordinates every 2.0 ps
+compressed-x-grps       = System    ; save the whole system
+
+; Bond parameters
+continuation            = yes       ; Restarting after NPT
+constraint_algorithm    = lincs     ; holonomic constraints 
+constraints             = h-bonds   ; bonds involving H are constrained
+lincs_iter              = 1         ; accuracy of LINCS
+lincs_order             = 4         ; also related to accuracy
+
+; Nonbonded settings 
+cutoff-scheme           = Verlet    ; Buffered neighbor searching
+nstlist                 = 10        ; 20 fs, largely irrelevant with Verlet
+
+; van der Waals
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw-switch             = 0.9
+rvdw                    = 1.0
+DispCorr                = EnerPres
+
+; Electrostatics
+rcoulomb                = 1.0       ; short-range electrostatic cutoff (in nm)
+coulombtype             = PME       ; Particle Mesh Ewald for long-range electrostatics
+pme_order               = 4         ; cubic interpolation
+fourierspacing          = 0.12      ; grid spacing for FFT
+
+; Temperature coupling is on
+tcoupl                  = V-rescale ; stochastic Bussi thermostat 
+tc-grps                 = Protein non-protein 
+tau_t                   = 1.0 1.0  ; value of tau (ps)
+ref_t                   = 303 303  ; temperature (K) 
+
+; Pressure coupling is off
+pcoupl                  = no        ; no pressure coupling in NVT
+
+; Periodic boundary conditions
+pbc                     = xyz       ; 3-D PBC
+
+; Velocity generation
+gen_vel                 = no        ; use velocities from equilibration

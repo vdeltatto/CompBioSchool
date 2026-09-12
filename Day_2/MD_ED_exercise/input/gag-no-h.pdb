@@ -1,0 +1,22 @@
+HEADER          Molecule
+TITLE    GAG-beta
+REMARK 6 
+REMARK   6  PDB FORMAT V. 2.2, 16-DEC-1996
+REMARK   6  created by MOLDRAW 32-bit version
+REMARK   6  http://www.moldraw.unito.it
+REMARK 6
+ATOM      1  N    GLY   0       9.140  -0.312  -2.996  1.00  0.00            N 
+ATOM      2  CA   GLY   0       7.716  -0.539  -3.323  1.00  0.00            C 
+ATOM      3  C    GLY   0       6.916   0.575  -2.655  1.00  0.00            C 
+ATOM      4  O    GLY   0       7.512   1.463  -2.045  1.00  0.00            O 
+ATOM      5  N    ALA   0       5.597   0.511  -2.785  1.00  0.00            N 
+ATOM      6  CA   ALA   0       4.697   1.473  -2.179  1.00  0.00            C 
+ATOM      7  C    ALA   0       3.378   0.749  -1.921  1.00  0.00            C 
+ATOM      8  O    ALA   0       3.087  -0.270  -2.542  1.00  0.00            O 
+ATOM      9  CB   ALA   0       4.472   2.694  -3.072  1.00  0.00            C 
+ATOM     10  N    GLY   0       2.563   1.301  -1.015  1.00  0.00            N 
+ATOM     11  CA   GLY   0       1.283   0.727  -0.709  1.00  0.00            C 
+ATOM     12  C    GLY   0       0.211   1.060  -1.729  1.00  0.00            C 
+ATOM     13  O    GLY   0       0.344   1.819  -2.657  1.00  0.00            O 
+ATOM     14  O    GLY   0      -0.921   0.408  -1.469  1.00  0.00            O 
+END

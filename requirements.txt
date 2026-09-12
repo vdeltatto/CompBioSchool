@@ -1,0 +1,25 @@
+# Python packages needed by the notebooks of the school.
+# Install with:  pip install -r requirements.txt
+#
+# Known-good versions are noted per line; any recent release should work.
+
+# --- Jupyter (all days) ---
+jupyterlab          # tested with 4.x
+ipykernel
+
+# --- Day 1: Verlet integrator & thermostats ---
+numpy               # tested with 1.26.4
+matplotlib          # tested with 3.10.1
+
+# --- Day 2: MD + essential dynamics analysis (GROMACS output) ---
+MDAnalysis          # tested with 2.9.0
+scikit-learn        # tested with 1.7.2
+freesasa            # tested with 2.2.1
+
+# --- Day 3: Muller-Brown umbrella sampling ---
+scipy               # tested with 1.15.2
+numba               # tested with 0.61
+
+# NOTE: Day 3 also needs the local `molsim` package, which is NOT on PyPI.
+# Install it separately, after the packages above:
+#     pip install -e Day_3/US_Exercise
