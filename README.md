@@ -14,7 +14,7 @@ Day_2/   Force fields, hydrated systems, and the MD workflow. `MD_ED_exercise/`
 Day_3/   Enhanced sampling. `US_Exercise/` is an umbrella-sampling exercise on
          the Müller-Brown potential, built on the local `molsim` package.
 Day_4/   Density functional theory.
-Day_5/   (to come)
+Day_5/   Overview of unsupervised methods; clustering and Markov state modeling
 ```
 
 Day 2 has extra requirements beyond the Python environment — see
